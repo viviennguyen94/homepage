@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Passion+One");
+
+
+body {
+    background-color: #a9d7d1;
+    font-family: 'Raleway','Century Gothic','Trebuchet MS';
+    text-align: center;
+}
+#title {
+    width: 100%;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    font-family: 'Passion One', Arial;
+    font-size: 35px;
+    letter-spacing: 9px;
+    background-color: rgb(214, 202, 187);
+    text-shadow: 2px 2px 4px #000000;
+    color: rgb(245, 235, 235);
+}
+form {
+    background-color: rgba(255, 255, 255, 0.897);
+    border-radius: 5px;
+    margin: auto;
+    width: 75%;
+    padding: 25px;
+    box-shadow: 1px 0px 1px black;
+    position: relative;
+    margin-top: 140px;
+}
+input[type="radio"],input[type="checkbox"] {
+    position: relative;
+    margin-left: 10px;
+}
+.input-field {
+    height: 20px;
+    width: 280px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+}
+.labels, #name-label, #email-label, #number-label {
+    display: inline-block;
+    width: 40%;
+    text-align: right;
+    padding: 5px;
+    vertical-align: top;
+    margin-top: 10px;
+}
+.rightTab {
+    display: inline-block;
+  	text-align: left;
+    vertical-align: middle;
+    width: 48%;
+}
+.dropdown {
+    height: 35px;
+    width: 140px;
+    padding: 5px;
+    margin: 10px;
+    margin-top: 15px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+}
+#comments {
+    height: 50px;
+    resize: vertical;
+}
+#submit {
+    background-color: rgb(97, 180, 228);
+    color: white;
+    border-radius: 4px;
+    width: 96px;
+    height: 40px;
+    padding: 8px 16px;
+    border: 2px solid rgb(97, 180, 228);
+    font: Arial;
+    font-size: 1em;
+    box-shadow: 1px 1px 1px black;
+    transition: 0.3s;
+}
+#submit:hover {
+    background-color: white;
+    color: black;
+}
+footer {
+    padding: 10px;
+}
+p {
+    margin: 10px 0px;
+}
+.checkboxes, .radios {
+    margin: 5px 0px;
+}
+@media screen and (max-width: 800px) {
+    .rightTab,.dropdown,.labels,#name-label,#email-label,#number-label {
+        width: 100%;
+        display: block;
+        text-align: left;
+    }
+    .input-field {
+        width: 90%;
+        float: left;
+    }
+    #title,form {
+        position: static;
+        margin-top: 0px;
+    }
+}

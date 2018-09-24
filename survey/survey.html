@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<link href="main.css" type="text/css" rel="stylesheet">
+<html>
+<head>
+    <title>FCC Survey</title>
+</head>
+<body>
+    <header id="title"><h1><b>Survey Form</b></h1></header>
+    <main>
+        <form id="survey-form" action="/submit-survey">
+            <p id="description">Let us know how we can improve freeCodeCamp</p>
+            <div class="rowTab">
+                <label id="name-label">*Name: </label> 
+                <div class="rightTab">
+                <input class="input-field" type="text" name="name" id="name" placeholder="Enter your name" required>
+                </div>
+            </div>
+            <div class="rowTab">
+                <label id="email-label">*Email: </label>
+                <div class="rightTab">
+                <input class="input-field" type="email" name="email" id="email" placeholder="Enter your email" required>
+                </div>
+            </div>
+            <div class="rowTab">
+                <label for="number" id="number-label">*Age:</label>
+                <div class="rightTab">
+                <input class="input-field" type="number" name="age" id="number" min="5" max="100" placeholder="Age" required>
+                </div>
+            </div> 
+
+            <div class="rowTab">
+                <div class="labels">
+                <label for="role">Which option best describes your current role?</label>
+                </div>
+                <div class="rightTab">
+                <select class ="dropdown" id="role">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="" selected>Student</option>
+                    <option value="">Full-time job</option>
+                    <option value="">Full-time learner</option>
+                    <option value="">Prefer not to say</option>
+                    <option value="">Other</option>
+                </select>
+                </div>
+            </div>
+
+            <div class="rowTab">
+                <div class="labels">
+                <label for ="radios">*How likely is that you would recommend freeCodeCamp to a friend?</label>
+                </div>
+                <div class="rightTab radios" id="radios">
+                <p><label for="Definitely">
+                    <input id="Definitely" type="radio" name="recommend" required value="1">Definitely
+                </label></p>
+                <p><label for="Maybe">
+                    <input id="Maybe" type="radio" name="recommend" value="2">Maybe
+                </label></p>
+                <p><label for="Not Sure">
+                    <input type="radio" id="Not Sure" name="recommend" value ="3">Not Sure
+                </label></p>
+                </div>
+            </div>
+
+            <div class="rowTab">
+                <div class="labels">
+                <label>What do you like most in FCC: </label>
+                </div>
+                <div class="rightTab">
+                <select class="dropdown" id="dropdown">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="1">Challenges</option>
+                    <option value="2">Projects</option>
+                    <option value="3">Community</option>
+                    <option value="4">Open Source</option>
+                </select>
+                </div>
+            </div>
+
+            <div class="rowTab">
+                <div class="labels">
+                <label>Things that should be improved in the future <br>(Check all that apply):
+                </label>
+                </div>
+                <div class="rightTab checkboxes">
+                <p><label for="fep"><input type="checkbox" id="fep" name="improve">Front-end Projects</label></p>
+                <p><label><input type="checkbox" name="improve">Back-end Projects</label></p>
+                <p><label><input type="checkbox" name="improve">Data Visualization</label></p>
+                <p><label><input type="checkbox" name="improve">Challenges</label></p>
+                <p><label><input type="checkbox" name="improve">Open Source Community</label></p>
+                <p><label><input type="checkbox" name="improve">Gitter help rooms</label></p>
+                <p><label><input type="checkbox" name="improve">Videos</label></p>
+                <p><label><input type="checkbox" name="improve">City Meetups</label></p>
+                <p><label><input type="checkbox" name="improve">Wiki</label></p>
+                <p><label><input type="checkbox" name="improve">Forum</label></p>
+                <p><label for="Additional Courses"><input type="checkbox" name="improve" id="Additional Courses">Additional Courses</label></p>
+                </div>
+            </div>
+
+            <div class="rowTab">
+                <div class="labels">
+                <label for="comments">Any comments or suggestions?</label>
+                </div>
+                <div class="rightTab">
+                <textarea class="input-field" name="comments" id="comments" cols="30" rows="5" placeholder="Enter your comment here..."></textarea>
+                </div>
+            </div>
+
+            <input id="submit" type="submit" value="Submit"></button>
+        </form>
+    </main>
+    <footer>&copy; 2018 Vivien Nguyen</footer>
+</body>
+</html>
