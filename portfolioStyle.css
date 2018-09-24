@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css?family=Muli");
+
+body {
+    --mainColor: rgb(175, 204, 207);
+    font-family: 'Source Sans Pro', 'Century Gothic';
+    text-align: center;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+main {
+    width: 80%;
+    margin: auto;
+}
+h2 {
+    letter-spacing: 10px;
+    font-family: 'Century Gothic';
+}
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.6s;
+}
+a:hover {
+    color: rgb(192, 196, 145);
+}
+#nav-bar {
+    background-color: rgb(66, 66, 97);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+#nav-bar p {
+    padding: 13px 45px;
+    letter-spacing: 2px;
+}
+.hover:hover {
+    transition: 0.7s;
+    background-color: var(--mainColor);
+}
+#header-img {
+    margin-right: auto;
+}
+#descriptionBox {
+    top: 0;
+    min-height: 35vh;
+    padding-top: 25vh;
+    background-image: url("Coffee-Background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#description, #descriptionBox p {
+    width: 70%;
+    padding: 10px 0px;
+    letter-spacing: 2px;
+    color: white
+}
+.flower-pic {
+    margin: 20px;
+    width: 200px;
+    transition: opacity 0.2s ease-out;
+}
+.thick-black-border {
+    border-style: solid;
+    border-color: black;
+    border-width: 10px;
+    border-radius: 50%;
+}
+#projectsBox {
+    margin: 50px 0px;
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 45px;
+}
+.project {
+    justify-self: center;
+    border-radius: 50px;
+    border: 2px solid rgb(135, 189, 182);
+    width: 315px;
+    height: 315px; 
+    transition: transform 0.6s ease-in-out;
+    background-color: white;
+}
+.project:hover {
+    transform: scale(1.2);
+}
+.projectName {
+    border-radius: 50px 50px 0px 0px;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    font-family: 'Muli', 'Century Gothic';
+    background-color: var(--mainColor);
+    margin: 0px;
+    margin-bottom: 20px;
+    padding: 10px 0px;
+}
+.projectImg {
+    transition: opacity 0.5s ease-out;
+    background-color: var(--mainColor);
+    height: 200px;
+}
+.projectImg:hover {
+    opacity: 0.8;
+}
+.crop {
+    height: 200px;
+    overflow: hidden;
+    margin: 0px 10px;
+    border-radius: 10px;
+}
+#contactBox {
+    padding: 45px 0px;
+    border-radius: 10px;
+    background-color: rgb(236, 244, 245);
+    margin: 70px 0px;
+    /* display: flex;
+    justify-content: space-between; */
+}
+.contact {
+    justify-content: center;
+}
+#contactBox1 {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 45px;
+}
+#contactBox2 {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 45px;
+}
+i {
+    color: rgb(70, 175, 206);
+    text-shadow:2px 2px 4px #000000;
+    height: 110px;
+    width: 20vw;
+}
+button {
+    border: 2px solid rgb(98, 106, 109);
+    font-family: 'Muli', 'Century Gothic';
+    margin: 15px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: beige;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+button:hover, #submit:hover {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.411);
+}
+footer {
+    margin: auto;
+    background-color: var(--mainColor);
+    width: 80%;
+    padding: 10px;
+}
+@media (max-width: 800px) {
+    .contact, #projectsBox, #nav-bar {
+        flex-wrap: wrap;
+    }
+    #descriptionBox {
+        margin-top: 200px;
+    }
+    #email {
+        width: 70%;
+    }
+    i {
+        height: 60px;
+    }
+    .contact, #nav-bar, .nav-link {
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    #header-img {
+        margin: auto;
+    }
+}
