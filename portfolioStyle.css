@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Muli");
 
 body {
-    --mainColor: rgb(175, 204, 207);
+    --mainColor: rgb(70, 73, 73);
     font-family: 'Source Sans Pro', 'Century Gothic';
     text-align: center;
 }
@@ -24,16 +24,15 @@ a {
     transition: 0.6s;
 }
 a:hover {
-    color: rgb(192, 196, 145);
+    color: rgb(145, 173, 196);
 }
 #nav-bar {
-    background-color: rgb(66, 66, 97);
+    background-color: rgb(61, 61, 66);
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 2;
     display: flex;
-    justify-content: flex-end;
 }
 #nav-bar p {
     padding: 13px 45px;
@@ -49,11 +48,12 @@ a:hover {
 #descriptionBox {
     top: 0;
     min-height: 35vh;
-    padding-top: 25vh;
-    background-image: url("Coffee-Background.png");
+    padding-top: 60vh;
+    background-image: url("images/City-Background.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 #description, #descriptionBox p {
     width: 70%;
@@ -82,7 +82,7 @@ a:hover {
 }
 .project {
     justify-self: center;
-    border-radius: 50px;
+    border-radius: 20px;
     border: 2px solid rgb(135, 189, 182);
     width: 315px;
     height: 315px; 
@@ -90,10 +90,10 @@ a:hover {
     background-color: white;
 }
 .project:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .projectName {
-    border-radius: 50px 50px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     text-transform: lowercase;
     letter-spacing: 2px;
     font-family: 'Muli', 'Century Gothic';
@@ -120,7 +120,8 @@ a:hover {
     padding: 45px 0px;
     border-radius: 10px;
     background-color: rgb(236, 244, 245);
-    margin: 70px 0px;
+    margin: 70px auto;
+    width: 80%;
     /* display: flex;
     justify-content: space-between; */
 }
