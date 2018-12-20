@@ -24,7 +24,7 @@ a {
     transition: 0.6s;
 }
 a:hover {
-    color: rgb(145, 173, 196);
+    color: rgb(38, 226, 217);
 }
 #nav-bar {
     background-color: rgb(61, 61, 66);
@@ -38,10 +38,22 @@ a:hover {
     padding: 13px 45px;
     letter-spacing: 2px;
 }
-.hover:hover {
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s
+}
+.nav-link:hover::after {
+    width: 100%;
+    transition: width 0.3s;
+}
+/* .hover:hover {
     transition: 0.7s;
     background-color: var(--mainColor);
-}
+} */
 #header-img {
     margin-right: auto;
 }
@@ -166,6 +178,7 @@ footer {
     background-color: var(--mainColor);
     width: 80%;
     padding: 10px;
+    color: white;
 }
 @media (max-width: 800px) {
     .contact, #projectsBox, #nav-bar {
